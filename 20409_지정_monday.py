@@ -9,7 +9,7 @@ soup = BeautifulSoup(response.content, 'html.parser')
 first = soup.find("ul", {"data-log-actionid-area":"hot"})
 twice = first.find("p", {"class":"info_tit"})
 
-print(first.get_text(), )
+print(first.get_text())
 print(twice.get_text())
 
 wb = openpyxl.Workbook()
